@@ -33,12 +33,11 @@ You'll need to have already installed:
   * [Leiningen](http://leiningen.org/)
   * the [lein-exec](https://github.com/kumarshantanu/lein-exec)
     Leiningen plug-in
-  * lein-exec's tiny
-    [lein-exec](https://raw.githubusercontent.com/kumarshantanu/lein-exec/master/lein-exec)
-    script
+  * lein-exec's tiny [lein-exec
+    script](https://raw.githubusercontent.com/kumarshantanu/lein-exec/master/lein-exec)
 
 See [more install help](more-install-help.md) if you could use a hand
-setting up those last two items.
+setting up those last two items. Go ahead, we'll wait. ☺
 
 
 ## Compatibility
