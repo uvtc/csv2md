@@ -31,8 +31,8 @@ You'll need to have already installed:
     [lein-exec](https://raw.githubusercontent.com/kumarshantanu/lein-exec/master/lein-exec)
     script
 
-See [more install help](more-install-help.md) if you could
-use a hand setting that up those last two items.
+See [more install help](more-install-help.md) if you could use a hand
+setting up those last two items.
 
 
 ## Compatibility
@@ -43,7 +43,8 @@ program on any OS other than GNU/Linux.
 
 ## Install
 
-Just put csv2md.clj anywhere in your $PATH.
+Just put csv2md.clj anywhere in your $PATH, and make sure it's
+executable (`chmod +x csv2md.clj`).
 
 
 ## Usage
