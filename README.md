@@ -19,6 +19,12 @@ size    color    shape
 ~~~
 
 
+## What is it?
+
+It's a script, which happens to be written in
+[Clojure](http://clojure.org/).
+
+
 ## Prerequisites
 
 You'll need to have already installed:
