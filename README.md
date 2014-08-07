@@ -31,7 +31,7 @@ You'll need to have already installed:
     [lein-exec](https://raw.githubusercontent.com/kumarshantanu/lein-exec/master/lein-exec)
     script
 
-See [more install help](blob/master/more-install-help.md) if you could
+See [more install help](more-install-help.md) if you could
 use a hand setting that up those last two items.
 
 
