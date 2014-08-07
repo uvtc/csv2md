@@ -21,7 +21,7 @@ size    color    shape
 
 ## What is it?
 
-It's a script, which happens to be written in
+It's a script. It happens to be written in
 [Clojure](http://clojure.org/).
 
 
