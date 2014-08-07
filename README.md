@@ -54,6 +54,6 @@ executable (`chmod +x csv2md.clj`).
 
 ## License
 
-GPLv3. See [COPYING.txt](blob/master/COPYING.txt) for details.
+GPLv3. See [COPYING.txt](COPYING.txt) for details.
 
 Copyright 2014, John Gabriele <jgabriele@fastmail.fm>
