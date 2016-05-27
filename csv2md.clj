@@ -1,4 +1,4 @@
-#!/usr/bin/env lein-exec
+#!/usr/bin/env inlein
 
 ;; Copyright 2014 John Gabriele <jgabriele@fastmail.fm>
 ;;
@@ -15,17 +15,17 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-(require '[leiningen.exec :as l-exec])
-(l-exec/deps '[[org.clojure/data.csv "0.1.2"]])
+'{:dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/data.csv "0.1.3"]]}
 
 (require '[clojure.string   :as str]
          '[clojure.data.csv :as csv])
 
-(when (not= 2 (count *command-line-args*))
+(when (not= 1 (count *command-line-args*))
   (println "Please pass exactly one arg: the csv filename.")
   (System/exit 0))
 
-(def infile-name (second *command-line-args*))
+(def infile-name (first *command-line-args*))
 
 (defn find-max-len
   "Given a list of lists of strings, and also given an index
