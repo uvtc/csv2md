@@ -29,15 +29,8 @@ It's a script. It happens to be written in
 
 You'll need to have already installed:
 
-  * [Java](http://openjdk.java.net/) (known to work with openjdk-7-jre)
-  * [Leiningen](http://leiningen.org/)
-  * the [lein-exec](https://github.com/kumarshantanu/lein-exec)
-    Leiningen plug-in
-  * lein-exec's tiny [lein-exec
-    script](https://raw.githubusercontent.com/kumarshantanu/lein-exec/master/lein-exec)
-
-See [more install help](more-install-help.md) if you could use a hand
-setting up those last two items. Go ahead, we'll wait. ☺
+  * [Java](http://openjdk.java.net/) (known to work with openjdk-{7,8}-jre)
+  * [inlein](http://inlein.org/)
 
 
 ## Compatibility
@@ -61,4 +54,4 @@ executable (`chmod +x csv2md.clj`).
 
 GPLv3. See [COPYING.txt](COPYING.txt) for details.
 
-Copyright 2014, John Gabriele <jgabriele@fastmail.fm>
+Copyright 2014, 2015, 2016 John Gabriele <jgabriele@fastmail.fm>
