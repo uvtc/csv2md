@@ -1,6 +1,6 @@
 #!/usr/bin/env inlein
 
-;; Copyright 2014 John Gabriele <jgabriele@fastmail.fm>
+;; Copyright 2014, 2015, 2016 John Gabriele <jgabriele@fastmail.fm>
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
