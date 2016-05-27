@@ -3,20 +3,23 @@
 Turns this:
 
 ~~~
-size,color,shape
-9,green,ellipsoid
-10,blue,curvy
+aquamarine,8,circle
+green,9,ellipsoid
+blue,10,curvy
 ~~~
 
 into:
 
 ~~~
-size    color    shape        
-------  -------  -----------  
-9       green    ellipsoid    
-10      blue     curvy        
-------  -------  -----------  
+------------  ----  -----------
+aquamarine    8     circle
+green         9     ellipsoid
+blue          10    curvy
+------------  ----  -----------
 ~~~
+
+(You'll have to move that first table delimiter line down if
+the first line of your csv is intended to be a heading.)
 
 
 ## What is it?
