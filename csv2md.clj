@@ -21,16 +21,19 @@
 (require '[clojure.data.csv :as csv])
 (require '[clojure.string   :as str])
 
-(when (not= (count *command-line-args*) 1)
-  (println "Please pass exactly one arg, like so:
+
+(def usage-msg "Please pass exactly one arg, like so:
 
     csv2md.clj filename.csv
 
-Pretty markdown table output will go to stdout.")
-  (System/exit 0))
+Pretty Pandoc-markdown table output will go to stdout.")
+
 
 (defn main
   []
+  (when (not= (count *command-line-args*) 1)
+    (println usage-msg)
+    (System/exit 0))
   (let [input-file (first *command-line-args*)
         rows (csv/read-csv (slurp input-file))
         ;;_ (println rows)
@@ -46,7 +49,9 @@ Pretty markdown table output will go to stdout.")
     (println header)
     (doseq [row rows]
       (let [padded (for [[elem idx] (map vector row (range))]
-                     (format (str "%-" (+ 2 (nth max-col-sizes idx)) "s")
+                     (format (str "%-"
+                                  (+ 2 (nth max-col-sizes idx))
+                                  "s")
                              elem))]
         (println (str/join "  " padded))))
     (println header)))
