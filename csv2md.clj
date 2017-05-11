@@ -44,16 +44,14 @@ Pretty Pandoc-markdown table output will go to stdout.")
         num-chars (for [r inverted-rows]
                     (map count r))
         ;;_ (println num-chars)
-        max-col-sizes (map (fn [c] (apply max c)) num-chars)
+        max-col-sizes (map #(apply max %) num-chars)
         ;;_ (println max-col-sizes)
         header (str/join "  " (for [n max-col-sizes]
                                 (str/join (repeat (+ n 2) "-"))))]
     (println header)
     (doseq [row rows]
       (let [padded (for [[idx elem] (map-indexed vector row)]
-                     (format (str "%-"
-                                  (+ 2 (nth max-col-sizes idx))
-                                  "s")
+                     (format (str "%-" (+ 2 (nth max-col-sizes idx)) "s")
                              elem))]
         (println (str/trimr (str/join "  " padded)))))
     (println header)))
