@@ -22,7 +22,7 @@
 (require '[clojure.string   :as str])
 
 
-(def usage-msg "Please pass exactly one arg, like so:
+(def usage-msg "Please pass exactly one arg, a csv filename, like so:
 
     csv2md.clj filename.csv
 
@@ -31,7 +31,9 @@ Pretty Pandoc-markdown table output will go to stdout.")
 
 (defn main
   []
-  (when (not= (count *command-line-args*) 1)
+  (when (or (not= (count *command-line-args*) 1)
+            (not (str/ends-with? (first *command-line-args*)
+                                 ".csv")))
     (println usage-msg)
     (System/exit 0))
   (let [input-file (first *command-line-args*)
