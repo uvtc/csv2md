@@ -55,7 +55,7 @@ Pretty Pandoc-markdown table output will go to stdout.")
                                   (+ 2 (nth max-col-sizes idx))
                                   "s")
                              elem))]
-        (println (str/join "  " padded))))
+        (println (str/trimr (str/join "  " padded)))))
     (println header)))
 
 ;; ------------------------
