@@ -48,7 +48,7 @@ Pretty Pandoc-markdown table output will go to stdout.")
                                 (str/join (repeat (+ n 2) "-"))))]
     (println header)
     (doseq [row rows]
-      (let [padded (for [[elem idx] (map vector row (range))]
+      (let [padded (for [[idx elem] (map-indexed vector row)]
                      (format (str "%-"
                                   (+ 2 (nth max-col-sizes idx))
                                   "s")
