@@ -50,7 +50,7 @@ executable (`chmod +x csv2md.clj`).
 
 ## Usage
 
-    csv2md.clj foo.clj > foo.md
+    csv2md.clj foo.csv > foo.md
 
 
 ## License
