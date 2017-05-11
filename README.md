@@ -57,4 +57,4 @@ executable (`chmod +x csv2md.clj`).
 
 GPLv3. See [COPYING.txt](COPYING.txt) for details.
 
-Copyright 2014, 2015, 2016 John Gabriele <jgabriele@fastmail.fm>
+Copyright 2014, 2015, 2016, 2017 John Gabriele <jgabriele@fastmail.fm>
